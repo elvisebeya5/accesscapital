@@ -23,7 +23,7 @@ export default function DashboardContent() {
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">Welcome back, Investor. Here's an overview of your investments.</p>
         </div>
-        <Button>Download Statement</Button>
+        {/* <Button>Download Statement</Button> */}
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

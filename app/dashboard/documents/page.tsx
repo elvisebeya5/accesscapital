@@ -97,7 +97,7 @@ export default function DocumentsPage() {
                       <TableCell className="text-right">
                         <Button variant="ghost" size="sm">
                           <Download className="h-4 w-4 mr-2" />
-                          Download
+                          {/* Download */}
                         </Button>
                       </TableCell>
                     </TableRow>
@@ -148,7 +148,7 @@ export default function DocumentsPage() {
                       <TableCell className="text-right">
                         <Button variant="ghost" size="sm">
                           <Download className="h-4 w-4 mr-2" />
-                          Download
+                          {/* Download */}
                         </Button>
                       </TableCell>
                     </TableRow>
@@ -194,7 +194,7 @@ export default function DocumentsPage() {
                       <TableCell className="text-right">
                         <Button variant="ghost" size="sm">
                           <Download className="h-4 w-4 mr-2" />
-                          Download
+                          {/* Download */}
                         </Button>
                       </TableCell>
                     </TableRow>
@@ -240,7 +240,7 @@ export default function DocumentsPage() {
                       <TableCell className="text-right">
                         <Button variant="ghost" size="sm">
                           <Download className="h-4 w-4 mr-2" />
-                          Download
+                          {/* Download */}
                         </Button>
                       </TableCell>
                     </TableRow>

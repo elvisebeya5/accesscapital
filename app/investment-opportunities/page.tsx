@@ -91,6 +91,13 @@ This inquiry was submitted through the website contact form.
     }
   };
 
+  const scrollToForm = () => {
+    const formElement = document.querySelector('#investment-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-12 mt-16">
       <div className="grid gap-12">
@@ -241,7 +248,7 @@ This inquiry was submitted through the website contact form.
                           <span>RRSP/TFSA eligible</span>
                         </li>
                       </ul>
-                      <Button className="mt-6">Request Information</Button>
+                      <Button className="mt-6" onClick={scrollToForm}>Request Information</Button>
                     </div>
                     <div className="bg-muted p-6 rounded-lg">
                       <h3 className="text-xl font-semibold mb-4">Current Performance</h3>
@@ -475,7 +482,7 @@ This inquiry was submitted through the website contact form.
             Complete the form below to receive detailed information about our investment opportunities
           </p>
 
-          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+          <form id="investment-form" onSubmit={handleSubmit} className="max-w-2xl mx-auto">
             <div className="grid gap-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">

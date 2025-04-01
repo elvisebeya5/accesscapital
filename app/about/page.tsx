@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Users, Shield, TrendingUp, MapPin } from "lucide-react"
-// import { Logo } from "@/components/ui/logo"
+import { Logo } from "@/components/ui/logo"  // Uncomment this line
 
 export const metadata: Metadata = {
   title: "About Us | ACCESS CAPITAL MORTGAGE INVESTMENT COMPANY",
@@ -15,8 +15,8 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-12">
       <div className="grid gap-12">
         <div className="text-center">
-          <div className="mx-auto mb-8">
-            {/* <Logo /> */}
+          <div className="mx-auto mb-8 w-[300px]"> {/* Adjust width as needed */}
+            <Logo />
           </div>
           <h1 className="text-4xl font-bold tracking-tight mb-4">About ACCESS CAPITAL</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

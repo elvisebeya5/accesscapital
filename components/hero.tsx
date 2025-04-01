@@ -19,7 +19,7 @@ export default function Hero() {
           sizes="100vw"
         />
       </div>
-      <div className="container flex flex-col items-center text-center py-16 md:py-24 lg:py-32 relative z-10 text-white">
+      <div className="container flex flex-col items-center text-center mt-16 py-16 md:py-24 lg:py-32 relative z-10 text-white">
         <motion.h1
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 md:mb-6"
           initial={{ opacity: 0, y: 20 }}

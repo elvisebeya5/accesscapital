@@ -147,7 +147,7 @@ export default function EducationPage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start gap-2">
                     <div className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">
-                      &checkmark;
+                    ✓
                     </div>
                     <span>Minimum 20 shareholders (no single investor {">"}25% ownership)</span>
                   </li>
@@ -272,7 +272,7 @@ export default function EducationPage() {
         <div className="mt-8 sm:mt-12 bg-muted p-6 sm:p-8 rounded-xl">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-2">Ready to Learn More?</h2>
-            <p className="text-base sm:text-lg">Download our comprehensive MIC information package</p>
+            <p className="text-base sm:text-lg">Checkout our comprehensive MIC information package</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <Card>
@@ -281,7 +281,7 @@ export default function EducationPage() {
                   <BookOpen className="h-12 w-12 text-primary mb-4" />
                   <h3 className="text-xl font-semibold mb-2">MIC Investor Guide</h3>
                   <p className="mb-4">Complete overview of MIC investing and benefits</p>
-                  <Button variant="outline">Download</Button>
+                  {/* <Button variant="outline">Download</Button> */}
                 </div>
               </CardContent>
             </Card>
@@ -291,7 +291,7 @@ export default function EducationPage() {
                   <BarChart4 className="h-12 w-12 text-primary mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Performance Reports</h3>
                   <p className="mb-4">Historical returns and portfolio metrics</p>
-                  <Button variant="outline">Download</Button>
+                  {/* <Button variant="outline">Download</Button> */}
                 </div>
               </CardContent>
             </Card>
@@ -301,7 +301,7 @@ export default function EducationPage() {
                   <HelpCircle className="h-12 w-12 text-primary mb-4" />
                   <h3 className="text-xl font-semibold mb-2">FAQ Document</h3>
                   <p className="mb-4">Answers to common investor questions</p>
-                  <Button variant="outline">Download</Button>
+                  {/* <Button variant="outline">Download</Button> */}
                 </div>
               </CardContent>
             </Card>

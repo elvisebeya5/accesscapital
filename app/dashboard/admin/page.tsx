@@ -407,7 +407,7 @@ export default function AdminDashboardPage() {
                         Complete analysis of mortgage portfolio performance
                       </p>
                       <Button variant="outline" className="w-full">
-                        Generate
+                        {/* Generate */}
                       </Button>
                     </div>
                   </CardContent>

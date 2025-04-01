@@ -49,7 +49,9 @@ export default function Header() {
             href="/" 
             className="flex items-center transition-transform hover:scale-105 duration-200 mr-8"
           >
-            <Logo />
+            <div className="w-[200px]"> {/* Increased logo size */}
+              <Logo />
+            </div>
           </Link>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -61,7 +63,9 @@ export default function Header() {
             <SheetContent side="left" className="w-[80%] max-w-xs pr-0">
               <div className="px-7">
                 <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-                  <Logo />
+                  <div className="w-[180px]"> {/* Slightly smaller size for mobile menu */}
+                    <Logo />
+                  </div>
                 </Link>
               </div>
               <nav className="flex flex-col gap-4 mt-8">
