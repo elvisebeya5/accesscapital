@@ -13,16 +13,16 @@ export const metadata: Metadata = {
 
 export default function EducationPage() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid gap-12">
+    <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 mt-16">
+      <div className="grid gap-8 sm:gap-12">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight mb-4">MIC Education Center</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3 sm:mb-4">MIC Education Center</h1>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Understanding Mortgage Investment Corporations (MICs)
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start">
           <div>
             <h2 className="text-3xl font-bold mb-6">What is a MIC?</h2>
             <p className="text-lg mb-6">
@@ -47,35 +47,45 @@ export default function EducationPage() {
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <div className="bg-primary/10 text-primary font-medium px-2 py-1 rounded text-sm mt-0.5">Benefit</div>
+                  <div className="bg-primary/10 text-primary font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+                    Benefit
+                  </div>
                   <div>
                     <span className="font-semibold">High-Yield Income</span> – Earn 8-12% annually (historically higher
                     than GICs or bonds)
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-primary/10 text-primary font-medium px-2 py-1 rounded text-sm mt-0.5">Benefit</div>
+                  <div className="bg-primary/10 text-primary font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+                    Benefit
+                  </div>
                   <div>
                     <span className="font-semibold">Real Estate Security</span> – All loans are backed by registered
                     mortgages on Canadian properties
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-primary/10 text-primary font-medium px-2 py-1 rounded text-sm mt-0.5">Benefit</div>
+                  <div className="bg-primary/10 text-primary font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+                    Benefit
+                  </div>
                   <div>
                     <span className="font-semibold">Tax Efficiency</span> – MICs are flow-through entities (no corporate
                     tax; dividends taxed as interest income)
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-primary/10 text-primary font-medium px-2 py-1 rounded text-sm mt-0.5">Benefit</div>
+                  <div className="bg-primary/10 text-primary font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+                    Benefit
+                  </div>
                   <div>
                     <span className="font-semibold">RRSP/RRIF Eligible</span> – Hold MIC shares in registered accounts
                     for tax-deferred growth
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="bg-primary/10 text-primary font-medium px-2 py-1 rounded text-sm mt-0.5">Benefit</div>
+                  <div className="bg-primary/10 text-primary font-medium px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs sm:text-sm mt-0.5 whitespace-nowrap">
+                    Benefit
+                  </div>
                   <div>
                     <span className="font-semibold">No Landlord Duties</span> – Avoid property management hassles while
                     benefiting from real estate returns
@@ -172,50 +182,51 @@ export default function EducationPage() {
           </div>
         </div>
 
-        <div className="mt-8">
-          <h2 className="text-3xl font-bold mb-6">MICs vs. Other Investments</h2>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-[200px]">Feature</TableHead>
-                <TableHead>MIC (9%)</TableHead>
-                <TableHead>GIC (4%)</TableHead>
-                <TableHead>Dividend Stocks (5%)</TableHead>
-                <TableHead>REITs</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="font-medium">Annual Income</TableCell>
-                <TableCell className="text-primary font-semibold">$9,000</TableCell>
-                <TableCell>$4,000</TableCell>
-                <TableCell>$5,000</TableCell>
-                <TableCell>$5,000-$8,000</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Principal Security</TableCell>
-                <TableCell>Mortgage-backed</TableCell>
-                <TableCell>Guaranteed</TableCell>
-                <TableCell>Market-Dependent</TableCell>
-                <TableCell>Unsecured</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Liquidity</TableCell>
-                <TableCell>Annual Redemption</TableCell>
-                <TableCell>Term-Locked</TableCell>
-                <TableCell>Daily Trading</TableCell>
-                <TableCell>Daily Trading</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="font-medium">Tax Efficiency</TableCell>
-                <TableCell>High</TableCell>
-                <TableCell>Medium</TableCell>
-                <TableCell>Medium</TableCell>
-                <TableCell>Mixed</TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-          <p className="text-sm text-muted-foreground mt-2">
+        <div className="mt-8 overflow-x-auto">
+          <div className="min-w-[800px]">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="w-[200px]">Feature</TableHead>
+                  <TableHead>MIC (9%)</TableHead>
+                  <TableHead>GIC (4%)</TableHead>
+                  <TableHead>Dividend Stocks (5%)</TableHead>
+                  <TableHead>REITs</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">Annual Income</TableCell>
+                  <TableCell className="text-primary font-semibold">$9,000</TableCell>
+                  <TableCell>$4,000</TableCell>
+                  <TableCell>$5,000</TableCell>
+                  <TableCell>$5,000-$8,000</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Principal Security</TableCell>
+                  <TableCell>Mortgage-backed</TableCell>
+                  <TableCell>Guaranteed</TableCell>
+                  <TableCell>Market-Dependent</TableCell>
+                  <TableCell>Unsecured</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Liquidity</TableCell>
+                  <TableCell>Annual Redemption</TableCell>
+                  <TableCell>Term-Locked</TableCell>
+                  <TableCell>Daily Trading</TableCell>
+                  <TableCell>Daily Trading</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Tax Efficiency</TableCell>
+                  <TableCell>High</TableCell>
+                  <TableCell>Medium</TableCell>
+                  <TableCell>Medium</TableCell>
+                  <TableCell>Mixed</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+          <p className="text-xs sm:text-sm text-muted-foreground mt-2">
             *Based on $100,000 investment. Returns are for illustration purposes only.
           </p>
         </div>
@@ -258,12 +269,12 @@ export default function EducationPage() {
           </Accordion>
         </div>
 
-        <div className="mt-12 bg-muted p-8 rounded-xl">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-2">Ready to Learn More?</h2>
-            <p className="text-lg">Download our comprehensive MIC information package</p>
+        <div className="mt-8 sm:mt-12 bg-muted p-6 sm:p-8 rounded-xl">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2">Ready to Learn More?</h2>
+            <p className="text-base sm:text-lg">Download our comprehensive MIC information package</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
